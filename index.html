@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="style.css">
+    <title>scoreboard</title>
+</head>
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="debug">
+    <header class="container">
+
+    </header>
+
+    <!-- <main class="container">
+        <section class="row">
+
+            <div class="col-12 text-end p-2"> <button onclick="reset()" class="btn btn-warning">reset</button></div>
+
+        </section>
+
+        <section class="row">
+
+            <div class="col-12 text-center">
+
+                <section class="row">
+
+                    <div class="col-6 p-2">
+                        <h2 class="rounded-pill bg-success">home</h2>
+                    </div>
+                    <div class="col-6 p-2">
+                        <h2 class="rounded-pill bg-warning">away</h2>
+
+                    </div>
+                </section>
+
+                <section class="row">
+
+                    <div id="" class="col-6 p-2">
+
+                        <p id="home-score" class="m-2"></p>
+
+                    </div>
+
+                    <div id="" class="col-6 p-2">
+                        <p id="away-score" class="m-2"></p>
+
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="row">
+            <div class="col-6 text-center p-2">
+                <button onclick="addScoreHome()" class="btn rounded-pill btn-success"> home scores</button>
+            </div>
+            <div class="col-6 text-center p-2">
+                <button onclick="addScoreAway()" class="btn rounded-pill btn-warning">away scores</button>
+
+            </div>
+            <div class="col-6 text-center p-2">
+                <button onclick="subScoreHome()" class="btn-outine-green rounded-pill">home -1</button>
+
+            </div>
+            <div class="col-6 text-center p-2">
+                <button onclick="subScoreAway()" class="btn-outline-red rounded-pill">away -1</button>
+            </div>
+        </section>
+    </main> -->
+
+    <main class="container">
+        <section class="row">
+            <div class="col-12 d-flex">
+                <div id="team-cards">
+                    <!-- NOTE col size 12 mod player# -->
+                </div>
+
+            </div>
+            <div class="col-12 d-flex">
+                <div id="team-scores">
+                    <!-- NOTE col size 12 mod player# -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container">
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
